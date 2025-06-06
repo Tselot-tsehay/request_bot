@@ -31,7 +31,7 @@ def monitor_system():
 def run_bot():
     try:
         logging.info("[BOT] Starting")
-        subprocess.run(["python3", ".py"], check=True)
+        subprocess.run(["python3", "trequest.py"], check=True)
     except subprocess.CalledProcessError as e:
         logging.error(f"[BOT ERROR] Process failed: {e}")
     except Exception as e:
